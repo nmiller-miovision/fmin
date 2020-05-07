@@ -8,7 +8,7 @@ export function nelderMead(f, x0, parameters) {
         nonZeroDelta = parameters.nonZeroDelta || 1.05,
         zeroDelta = parameters.zeroDelta || 0.001,
         minErrorDelta = parameters.minErrorDelta || 1e-6,
-        minTolerance = parameters.minErrorDelta || 1e-5,
+        minTolerance = parameters.minTolerance || 1e-5,
         rho = (parameters.rho !== undefined) ? parameters.rho : 1,
         chi = (parameters.chi !== undefined) ? parameters.chi : 2,
         psi = (parameters.psi !== undefined) ? parameters.psi : -0.5,
